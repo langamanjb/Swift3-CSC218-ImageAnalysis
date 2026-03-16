@@ -9,7 +9,7 @@ struct ContentView: View {
 
         VStack {
 
-            Image("picture1")
+            Image("elephants")
                 .resizable()
                 .scaledToFit()
                 .padding()
@@ -20,7 +20,7 @@ struct ContentView: View {
         }
         .padding()
         .task {
-            guard let uiImage = UIImage(named: "picture1"),
+            guard let uiImage = UIImage(named: "elephants"),
                   let cgImage = uiImage.cgImage else {
                 categoriesList = "Image not found or cannot convert to CGImage!"
                 return
